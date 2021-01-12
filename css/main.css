@@ -18,10 +18,14 @@
     border-color: black;
     border-style: double;
 }
+.sticky {
+    position: sticky;
+    top: 0;
+}
 
 .parallax{
     /* The image used */
-    background-image: url("/img/fall.jpg");
+    background-image: url("../img/fall.jpg");
 
     /* Set a specific height */
     height: 1000px;
@@ -30,5 +34,36 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+.parallax2{
+    /* The image used */
+    background-image: url("../img/fall2.jpg");
+
+    /* Set a specific height */
+    height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact {
+
+}
+.copyright{
+
+}
+footer {
+    height: 50px;
+
+    background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+
+}
+.navibarbg{
+
+    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
+
 }
