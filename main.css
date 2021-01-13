@@ -1,0 +1,26 @@
+body{
+}
+
+.my-container{
+    border: 2px solid red;
+}
+
+.my-row{
+    border: 2px solid blue;
+}
+
+.my-col{
+    border: 2px dotted green;
+    background-color: whitesmoke;
+}
+
+#navbarMenu{
+    padding: 10px;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+#my-carousel{
+}
