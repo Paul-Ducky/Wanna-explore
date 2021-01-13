@@ -16,7 +16,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-light navibarbg sticky">
-    <a href="#" class="navbar-brand" id="logo">"templogo"</a>
+    <a href="#" class="navbar-brand" id="logo"><img src="img/explore_logo.png" alt="Explore_Logo" width="50" height="50"></a>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -40,40 +40,78 @@
 
 <div class="f-parallax"></div>
 
-<div style="height:900px;background-color:whitesmoke;font-size:36px">
-    <div class="container-fluid">
-        <div class="row my-row1">
-            <div class="col col1">r1c1</div>
-            <div class="col col2">r1c2</div>
-            <div class="col col3">r1c3</div>
-        </div>
-        <div class="row my-row2">
-            <div class="col col1">r2c1</div>
-            <div class="col col2">r2c2</div>
-            <div class="col col3">r2c3</div>
-        </div>
-        <div class="row my-row3">
-            <div class="col col1">r3c1</div>
-            <div class="col col2">r3c2</div>
-            <div class="col col3">r3c3</div>
-        </div>
+<div class="container-fluid scrollblock">
+    <div class="row my-row1">
+        <div class="col-md-4 col-sm-2 col1">r1c1</div>
+        <div class="col-md-4 col-sm-2 col2">r1c2</div>
+        <div class="col-md-4 col-sm-2 col3">r1c3</div>
+    </div>
+    <div class="row my-row2">
+        <div class="col-md-4 col-sm-2 col1">r2c1</div>
+        <div class="col-md-4 col-sm-2 col2">r2c2</div>
+        <div class="col-md-4 col-sm-2 col3">r2c3</div>
+    </div>
+    <div class="row my-row3">
+        <div class="col-md-4 col-sm-2 col1">r3c1</div>
+        <div class="col-md-4 col-sm-2 col2">r3c2</div>
+        <div class="col-md-4 col-sm-2 col3">r3c3</div>
     </div>
 </div>
 
-
 <div class="f-parallax2"></div>
-<div style="height:900px;background-color:whitesmoke;font-size:36px">
-    Scroll Up and Down this page to see the parallax scrolling effect.
-    This div is just here to enable scrolling.
-    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+
+<div class="container-fluid scrollblock">
+    <div class="row my-row1">
+        <div class="col-md-4 col-sm-2 col1">r1c1</div>
+        <div class="col-md-4 col-sm-2 col2">r1c2</div>
+        <div class="col-md-4 col-sm-2 col3">r1c3</div>
+    </div>
+    <div class="row my-row2">
+        <div class="col-md-4 col-sm-2 col1">r2c1</div>
+        <div class="col-md-4 col-sm-2 col2">r2c2</div>
+        <div class="col-md-4 col-sm-2 col3">r2c3</div>
+    </div>
+    <div class="row my-row3">
+        <div class="col-md-4 col-sm-2 col1">r3c1</div>
+        <div class="col-md-4 col-sm-2 col2">r3c2</div>
+        <div class="col-md-4 col-sm-2 col3">r3c3</div>
+    </div>
 </div>
-<footer>
-    <div class="container">
+
+<footer class="container-fluid">
+    <div class="container-fluid">
         <div class="row justify-content-between">
-            <div class="col contact"><a href="#">Contact us!</a></div>
+            <div class="col contact">
+                <button class="contactbutton" onclick="openForm()" id="contact-us">Email</button>
+            </div>
             <div class="col offset-8 copyright"><p>All rights reserved ©</p></div>
         </div>
     </div>
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/f/mdopybww" method="POST" class="form-container container-fluid shadow-lg rounded-lg form-bg">
+            <h2>What would you like to tell us?</h2>
+
+            <div><label for="name"><b>Name</b></label></div>
+            <div><input type="text" placeholder="What is your full name?" id="name" name="name" required></div>
+
+            <div><label for="email"><b>Email</b></label></div>
+            <div><input type="text" placeholder="What is your email?" id="email" name="_replyto" required></div>
+            <div><label for="message"><b>Message</b></label></div>
+            <div><textarea id="message" name="message" placeholder="What is on your mind .."></textarea></div>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 </footer>
 </body>
 </html>

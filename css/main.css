@@ -1,3 +1,14 @@
+/*Navigation make-up */
+.navibarbg{
+    z-index: 1;
+    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
+
+}
+/* sticky class for navbar */
+.sticky {
+    position: sticky;
+    top: 0;
+}
 .my-container1{
     border-width: 2px;
     border-color: red;
@@ -7,19 +18,18 @@
     border-width: 1px;
     border-color: blue;
     border-style: dotted;
-    height: 300px;
 }
 .my-row2 {
     border-width: 1px;
     border-color: green;
     border-style: dashed;
-    height:300px;
+
 }
 .my-row3 {
     border-width: 1px;
     border-color: black;
     border-style: double;
-    height: 300px;
+
 }
 .col1{
     border-width: 1px;
@@ -36,14 +46,7 @@
     border-color: #087a55;
     border-style: dotted;
 }
-.sticky {
-    position: sticky;
-    top: 0;
-}
-#logo{
-    color: #050235;
-}
-
+/*parallaxes on fall page*/
 .f-parallax{
     /* The image used */
     background-image: url("../img/fall.jpg");
@@ -70,21 +73,41 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contact {
-
+/* center grid's class */
+.scrollblock {
+    background-color:whitesmoke;
+    font-size: 18px;
 }
-.copyright{
-
-}
+/* footer make-up */
 footer {
-    height: 50px;
 
     background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
     background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
 
 }
-.navibarbg{
-
-    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
-
+/* pop-up form make-up */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: Bahnschrift;
+}
+.form-container>textarea:focus {
+    background-color: lightgray;
+    outline: none;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 3rem;
+    z-index: 2;
+}
+.form-bg{
+    /*background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));*/
+}
+#message{
+    max-height: 10em;
+    width: 250px;
 }
