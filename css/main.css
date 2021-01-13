@@ -7,23 +7,44 @@
     border-width: 1px;
     border-color: blue;
     border-style: dotted;
+    height: 300px;
 }
 .my-row2 {
     border-width: 1px;
     border-color: green;
     border-style: dashed;
+    height:300px;
 }
 .my-row3 {
     border-width: 1px;
     border-color: black;
     border-style: double;
+    height: 300px;
+}
+.col1{
+    border-width: 1px;
+    border-color: yellow;
+    border-style: dotted;
+}
+.col2{
+    border-width: 1px;
+    border-color: #0a072d;
+    border-style: dotted;
+}
+.col1{
+    border-width: 1px;
+    border-color: #087a55;
+    border-style: dotted;
 }
 .sticky {
     position: sticky;
     top: 0;
 }
+#logo{
+    color: #050235;
+}
 
-.parallax{
+.f-parallax{
     /* The image used */
     background-image: url("../img/fall.jpg");
 
@@ -36,7 +57,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax2{
+.f-parallax2{
     /* The image used */
     background-image: url("../img/fall2.jpg");
 
