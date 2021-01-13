@@ -23,4 +23,27 @@ body{
 }
 
 #my-carousel{
+    padding: 50px;
+}
+
+.car-row{
+    padding: 50px;
+}
+
+.car-col{
+    justify-content: center;
+}
+
+.form-popup{
+    display: none;
+    position: fixed;
+}
+
+.footer{
+    height: 250px;
+}
+
+.copyright{
+    align-items: stretch;
+    float: bottom;
 }
