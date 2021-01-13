@@ -126,7 +126,7 @@ figure {
 /*Navigation make-up */
 .navibarbg{
     z-index: 1;
-    /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
+   /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
 
 }
 /* sticky class for navbar */
@@ -206,8 +206,8 @@ figure {
 /* footer make-up */
 footer {
 
-    /* background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-     background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
+   /* background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
 
 }
 /* pop-up form make-up */
