@@ -69,11 +69,7 @@
 /*full screen monitor */
 @media only screen and (min-width:768px){
 
-   .s-card-interface-container{
-      height:100vh;
 
-
-   }
 
    .e-light-h1{
       font-weight:200;
@@ -87,9 +83,7 @@
    .s-nodisplay{
       display:none;
    }
-   .e-parallax-divider-sm {
-      display:none;
-   }
+
 
 
 }
