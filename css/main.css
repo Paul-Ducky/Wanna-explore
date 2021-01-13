@@ -1,0 +1,90 @@
+.my-container1{
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+.my-row1 {
+    border-width: 1px;
+    border-color: blue;
+    border-style: dotted;
+    height: 300px;
+}
+.my-row2 {
+    border-width: 1px;
+    border-color: green;
+    border-style: dashed;
+    height:300px;
+}
+.my-row3 {
+    border-width: 1px;
+    border-color: black;
+    border-style: double;
+    height: 300px;
+}
+.col1{
+    border-width: 1px;
+    border-color: yellow;
+    border-style: dotted;
+}
+.col2{
+    border-width: 1px;
+    border-color: #0a072d;
+    border-style: dotted;
+}
+.col1{
+    border-width: 1px;
+    border-color: #087a55;
+    border-style: dotted;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+}
+#logo{
+    color: #050235;
+}
+
+.f-parallax{
+    /* The image used */
+    background-image: url("../img/fall.jpg");
+
+    /* Set a specific height */
+    height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f-parallax2{
+    /* The image used */
+    background-image: url("../img/fall2.jpg");
+
+    /* Set a specific height */
+    height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact {
+
+}
+.copyright{
+
+}
+footer {
+    height: 50px;
+
+    background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+
+}
+.navibarbg{
+
+    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
+
+}

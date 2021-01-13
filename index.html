@@ -36,11 +36,8 @@
             </nav>
         </div>
     </div>
-    <div class="row my-row">
-        <div class="col-2 my-col">
-            Row 2 Col 1
-        </div>
-        <div class="col-8 my-col">
+    <div class="row car-row">
+        <div class="col-8 car-col">
             <div id="my-carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
@@ -88,15 +85,35 @@
                 </a>
             </div>
         </div>
-        <div class="col-2 my-col">
-            Row 2 Col 3
-        </div>
     </div>
-    <div class="row justify-content-between">
-        <div class="col my-col contact"><a href="#">Contact us!</a></div>
-        <div class="col my-col offset-8 copyright"><p>All rights reserved ©</p></div>
+    <div class="row justify-content-between footer">
+        <div class="col my-col contact">
+            <button class="open-button" onclick="openForm()">Contact us</button>
+            <div class="form-popup" id="myform">
+                <form class="form-container">
+                    <h1>Contact us</h1>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" id="email" required/>
+                    <label>
+                        <textarea name="message" rows="30" cols="30">You contact us here</textarea>
+                    </label>
+                    <button type="submit" class="btn">Sent</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+        <div class="col offset-8 copyright"><p>All rights reserved ©</p></div>
     </div>
 </div>
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -109,3 +126,20 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+=======
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+>>>>>>> 256aca05ab0fe9c5d57117c8d7748ce7b8c11580
