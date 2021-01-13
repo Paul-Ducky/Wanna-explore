@@ -1,8 +1,8 @@
 /*styling header*/
-.s-container-header{
-   height:100vh;
+.s-container-header {
+    height: 100vh;
 
-
+}
 
 
 figure {
@@ -58,7 +58,7 @@ figure {
 }
 
 
-}
+
 
 
 .e-parallax-header {
@@ -89,26 +89,42 @@ figure {
    max-width:90%;
 }
 
+.s-font-size-h1{
+    font-size:3em;
+}
 
+.s-border-left{
+    border-left:solid green 2px;
+    padding-left:5px;
+    margin-bottom: 10px;
+}
 
 /*card interface */
 .e-parallax-divider-sm {
-   background-image: url("../img/spring-banner-cards.jpeg");
+   background-image: url("../img/spring-banner-transition.jpg");
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 2.5vh;
+   height: 40vh;
 }
 
 .e-parallax-background-cards {
-   background-image: url("../img/spring-banner-cards.jpeg");
+   background-image: linear-gradient(white, blue);
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
    height: 100%;
 }
+
+.s-background-color-cards{
+    background-image:linear-gradient(white, blue);
+
+}
+
+
+
 
 .card-picture{
       width:50px;
@@ -121,23 +137,21 @@ figure {
 
 
 /*full screen monitor */
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
 
 
+    .e-light-h1 {
+        font-weight: 200;
+        font-size: 4em;
+    }
 
-   .e-light-h1{
-      font-weight:200;
-      font-size:4em;
-   }
+    .s-row-width-h1 {
+        max-width: 100%;
+    }
 
-   .s-row-width-h1{
-      max-width:100%;
-   }
-
-   .s-nodisplay{
-      display:none;
-   }
-
+    .s-nodisplay {
+        display: none;
+    }
 
 
 }
