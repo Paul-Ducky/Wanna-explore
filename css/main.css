@@ -1,143 +1,238 @@
+
+/*Css van Elia start hier */
 /*styling header*/
-.s-container-header{
-   height:100vh;
 
-
-
-
-figure {
-    position: relative;
-    width: 100%;
-    height: 60%;
-    margin: 0!important;
+.s-container-header {
+    height: 100vh;
 }
-.my-container1{
-    border-width: 2px;
-    border-color: red;
-    border-style: solid;
-}
-.my-row1 {
-    border-width: 1px;
-    border-color: blue;
-    border-style: dotted;
-    height: 300px;
-}
-.my-row2 {
-    border-width: 1px;
-    border-color: green;
-    border-style: dashed;
-    height:300px;
-}
-.my-row3 {
-    border-width: 1px;
-    border-color: black;
-    border-style: double;
-    height: 300px;
-}
-.col1{
-    border-width: 1px;
-    border-color: yellow;
-    border-style: dotted;
-}
-.col2{
-    border-width: 1px;
-    border-color: #0a072d;
-    border-style: dotted;
-}
-.col1{
-    border-width: 1px;
-    border-color: #087a55;
-    border-style: dotted;
-}
-.sticky {
-    position: sticky;
-    top: 0;
-}
-#logo{
-    color: #050235;
-}
-
-
-}
-
 
 .e-parallax-header {
-   background-image: url("../img/spring-banner-head.jpg");
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 100vh;
+    background-image: url("../img/spring-banner-head.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
-
-.e-light-h1{
-   font-weight:200;
-   font-size:3em;
+.e-light-h1 {
+    font-weight: 200;
+    font-size: 3em;
 
 }
 
 /* end styling header */
 
-.s-opacy-grey-bg{
+.s-opacy-grey-bg {
 
-   background-color:rgba(120,120,120,0.6);
-
+    background-color: rgba(120, 120, 120, 0.6);
 
 }
-
-.s-row-width-h1{
-   max-width:90%;
+.s-row-width-h1 {
+    max-width: 90%;
 }
-
-
-
 /*card interface */
 .e-parallax-divider-sm {
-   background-image: url("../img/spring-banner-cards.jpeg");
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 2.5vh;
+    background-image: url("../img/spring-banner-cards.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5vh;
 }
-
 .e-parallax-background-cards {
-   background-image: url("../img/spring-banner-cards.jpeg");
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 100%;
+    background-image: url("../img/spring-banner-cards.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
-
-.card-picture{
-      width:50px;
-      height:50px;
-      background:transparent;
+.card-picture {
+    width: 50px;
+    height: 50px;
+    background: transparent;
 
 }
 /*end card interface */
 
-
-
 /*full screen monitor */
-@media only screen and (min-width:768px){
+@media only screen and (min-width: 768px) {
 
+    .e-light-h1 {
+        font-weight: 200;
+        font-size: 4em;
+    }
 
+    .s-row-width-h1 {
+        max-width: 100%;
+    }
 
-   .e-light-h1{
-      font-weight:200;
-      font-size:4em;
-   }
+    .s-nodisplay {
+        display: none;
+    }
 
-   .s-row-width-h1{
-      max-width:100%;
-   }
+}
 
-   .s-nodisplay{
-      display:none;
-   }
+/*css van Elia stopt hier*/
+/* Css van jens vanaf hier*/
 
+.my-container{
+    border: 2px solid red;
+}
+.my-row{
+    border: 2px solid blue;
+}
+.my-col{
+    border: 2px dotted green;
+    background-color: whitesmoke;
+}
 
+#navbarMenu{
+    padding: 10px;
+}
 
+.navbar{
+    padding: 10px;
+}
+
+#my-carousel{
+    padding: 50px;
+}
+
+.car-row{
+    padding: 50px;
+}
+
+.car-col{
+    justify-content: center;
+}
+
+.form-popup{
+    display: none;
+    position: fixed;
+}
+/* Css van jens stopt hier */
+/* Css van isaac start hier */
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+
+/*css van isaac stopt hier */
+/*css van paul start hier */
+
+/*Navigation make-up */
+.navibarbg{
+    z-index: 1;
+   /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
+
+}
+/* sticky class for navbar */
+.sticky-f {
+    position: sticky;
+    top: 0;
+}
+.my-container1-f{
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+.my-row1-f {
+    border-width: 1px;
+    border-color: blue;
+    border-style: dotted;
+}
+.my-row2-f {
+    border-width: 1px;
+    border-color: green;
+    border-style: dashed;
+
+}
+.my-row3-f {
+    border-width: 1px;
+    border-color: black;
+    border-style: double;
+
+}
+.col1-f{
+    border-width: 1px;
+    border-color: yellow;
+    border-style: dotted;
+}
+.col2-f{
+    border-width: 1px;
+    border-color: #0a072d;
+    border-style: dotted;
+}
+.col3-f{
+    border-width: 1px;
+    border-color: #087a55;
+    border-style: dotted;
+}
+/*parallaxes on fall page*/
+.f-parallax{
+    /* The image used */
+    background-image: url("../img/fall.jpg");
+
+    /* Set a specific height */
+    height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f-parallax2{
+    /* The image used */
+    background-image: url("../img/fall2.jpg");
+
+    /* Set a specific height */
+    height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* center grid's class */
+.scrollblock {
+    background-color:whitesmoke;
+    font-size: 18px;
+}
+/* footer make-up */
+footer {
+
+   /* background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
+
+}
+/* pop-up form make-up */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: Bahnschrift;
+}
+.form-container>textarea:focus {
+    background-color: lightgray;
+    outline: none;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 3rem;
+    z-index: 2;
+}
+.form-bg{
+    /*background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));*/
+}
+#message{
+    max-height: 10em;
+    width: 250px;
 }
