@@ -1,47 +1,172 @@
+
+/*Css van Elia start hier */
+/*styling header*/
+
+.s-container-header {
+    height: 100vh;
+}
+
+.e-parallax-header {
+    background-image: url("../img/spring-banner-head.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.e-light-h1 {
+    font-weight: 200;
+    font-size: 3em;
+
+}
+
+/* end styling header */
+
+.s-opacy-grey-bg {
+
+    background-color: rgba(120, 120, 120, 0.6);
+
+}
+.s-row-width-h1 {
+    max-width: 90%;
+}
+/*card interface */
+.e-parallax-divider-sm {
+    background-image: url("../img/spring-banner-cards.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.5vh;
+}
+.e-parallax-background-cards {
+    background-image: url("../img/spring-banner-cards.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.card-picture {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+
+}
+/*end card interface */
+
+/*full screen monitor */
+@media only screen and (min-width: 768px) {
+
+    .e-light-h1 {
+        font-weight: 200;
+        font-size: 4em;
+    }
+
+    .s-row-width-h1 {
+        max-width: 100%;
+    }
+
+    .s-nodisplay {
+        display: none;
+    }
+
+}
+
+/*css van Elia stopt hier*/
+/* Css van jens vanaf hier*/
+
+.my-container{
+    border: 2px solid red;
+}
+.my-row{
+    border: 2px solid blue;
+}
+.my-col{
+    border: 2px dotted green;
+    background-color: whitesmoke;
+}
+
+#navbarMenu{
+    padding: 10px;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+#my-carousel{
+    padding: 50px;
+}
+
+.car-row{
+    padding: 50px;
+}
+
+.car-col{
+    justify-content: center;
+}
+
+.form-popup{
+    display: none;
+    position: fixed;
+}
+/* Css van jens stopt hier */
+/* Css van isaac start hier */
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+
+/*css van isaac stopt hier */
+/*css van paul start hier */
+
 /*Navigation make-up */
 .navibarbg{
     z-index: 1;
-    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
 
 }
 /* sticky class for navbar */
-.sticky {
+.sticky-f {
     position: sticky;
     top: 0;
 }
-.my-container1{
+.my-container1-f{
     border-width: 2px;
     border-color: red;
     border-style: solid;
 }
-.my-row1 {
+.my-row1-f {
     border-width: 1px;
     border-color: blue;
     border-style: dotted;
 }
-.my-row2 {
+.my-row2-f {
     border-width: 1px;
     border-color: green;
     border-style: dashed;
 
 }
-.my-row3 {
+.my-row3-f {
     border-width: 1px;
     border-color: black;
     border-style: double;
 
 }
-.col1{
+.col1-f{
     border-width: 1px;
     border-color: yellow;
     border-style: dotted;
 }
-.col2{
+.col2-f{
     border-width: 1px;
     border-color: #0a072d;
     border-style: dotted;
 }
-.col1{
+.col3-f{
     border-width: 1px;
     border-color: #087a55;
     border-style: dotted;
@@ -81,8 +206,8 @@
 /* footer make-up */
 footer {
 
-    background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    /* background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+     background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
 
 }
 /* pop-up form make-up */
