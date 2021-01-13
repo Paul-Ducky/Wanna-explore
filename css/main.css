@@ -1,0 +1,95 @@
+/*styling header*/
+.s-container-header{
+   height:100vh;
+
+
+
+}
+
+
+.e-parallax-header {
+   background-image: url("../img/spring-banner-head.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+
+.e-light-h1{
+   font-weight:200;
+   font-size:3em;
+
+}
+
+/* end styling header */
+
+.s-opacy-grey-bg{
+
+   background-color:rgba(120,120,120,0.6);
+
+
+}
+
+.s-row-width-h1{
+   max-width:90%;
+}
+
+
+
+/*card interface */
+.e-parallax-divider-sm {
+   background-image: url("../img/spring-banner-cards.jpeg");
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 2.5vh;
+}
+
+.e-parallax-background-cards {
+   background-image: url("../img/spring-banner-cards.jpeg");
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100%;
+}
+
+.card-picture{
+      width:50px;
+      height:50px;
+      background:transparent;
+
+}
+/*end card interface */
+
+
+
+/*full screen monitor */
+@media only screen and (min-width:768px){
+
+   .s-card-interface-container{
+      height:100vh;
+
+
+   }
+
+   .e-light-h1{
+      font-weight:200;
+      font-size:4em;
+   }
+
+   .s-row-width-h1{
+      max-width:100%;
+   }
+
+   .s-nodisplay{
+      display:none;
+   }
+   .e-parallax-divider-sm {
+      display:none;
+   }
+
+
+}
