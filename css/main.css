@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5px;
+}
+
+.winter-container {
+    border: none;
+}
+
+.winter-row {
+    border: 1px solid red;
+}
+
+.winter-col {
+    border: 1px dotted blue;
+    height: 400px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax_winter {
+    /* The image used */
+    background-image: url("../img/soelden.jpeg");
+
+    /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
