@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Explore! Travel fall away!</title>
@@ -13,12 +13,67 @@
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css"/>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
 
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+        var deadline1 = new Date("Jan 13, 2021 17:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var t = deadline1 - now;
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("countdown1").innerHTML = days + "d "
+                + hours + "h " + minutes + "m " + seconds + "s ";
+            if (t < 0) {
+                clearInterval(x);
+                document.getElementById("countdown1").innerHTML = "No longer Available";
+            }
+        }, 1000);
+        var deadline2 = new Date("Jan 14, 2021 17:00:00").getTime();
+        var y = setInterval(function () {
+            var now = new Date().getTime();
+            var t = deadline2 - now;
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("countdown2").innerHTML = days + "d "
+                + hours + "h " + minutes + "m " + seconds + "s ";
+            if (t < 0) {
+                clearInterval(y);
+                document.getElementById("countdown2").innerHTML = "No longer Available";
+            }
+        }, 1000);
+        var deadline3 = new Date("Jan 15, 2021 17:00:00").getTime();
+        var z = setInterval(function () {
+            var now = new Date().getTime();
+            var t = deadline3 - now;
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("countdown3").innerHTML = days + "d "
+                + hours + "h " + minutes + "m " + seconds + "s ";
+            if (t < 0) {
+                clearInterval(z);
+                document.getElementById("countdown3").innerHTML = "No longer Available";
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
 <!-- navbar -->
-<nav class="navbar navbar-expand-md navbar-light navibarbg sticky">
-    <a href="index.html" class="navbar-brand logo-size" id="logo"><img src="img/explore_logo.png" alt="Explore_Logo" width="50" height="50"></a>
+<nav class="navbar navbar-expand-md navbar-light navibarbg sticky-top">
+    <a href="index.html" class="navbar-brand logo-size" id="logo"><img src="img/explore_logo.png" alt="Explore_Logo"
+                                                                       width="50" height="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
               <span class="navbar-toggler-icon">
               </span>
@@ -45,18 +100,75 @@
     </div>
 </nav>
 
-<div class="f-parallax"></div>
+<div class="f-parallax"><div class="f-p-block-1"><h2><i>Explore <b> Far </b> away..</i></h2></div></div><div class="f-p-block-2"><i><b>Discover..</b></i></div>
 
 <div class="container-fluid scrollblock">
     <div class="row my-row1">
-        <div class="col-md-4 col-sm-2 col1">r1c1</div>
-        <div class="col-md-4 col-sm-2 col2">r1c2</div>
-        <div class="col-md-4 col-sm-2 col3"><p class="font-weight-bold " id="Countdown"></p></div>
+        <div class="col-md-4 col-sm-2 col1">
+            <div class="card f-card" style="width: 18rem;">
+                <img class="card-img-top" src="img/fall.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Sample text first card.</p>
+                    <a href="#" class="btn btn-primary" id="countdown1"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-2 col2">
+            <div class="card f-card" style="width: 18rem;">
+                <img class="card-img-top" src="img/fall2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Sample text card 2.</p>
+                    <a href="#" class="btn btn-primary" id="countdown2"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-2 col3">
+            <div class="card f-card" style="width: 18rem;">
+                <img class="card-img-top" src="img/fall3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Sample text for some free-styling in css.</p>
+                    <a href="#" class="btn btn-primary" id="countdown3"></a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row my-row2">
-        <div class="col-md-4 col-sm-2 col1">r2c1</div>
-        <div class="col-md-4 col-sm-2 col2">r2c2</div>
-        <div class="col-md-4 col-sm-2 col3">r2c3</div>
+        <div class="col-md-4 col-sm-2 col1">
+            <div class="card f-card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-2 col2">
+            <div class="card f-card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-2 col3">
+            <div class="card f-card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row my-row3">
         <div class="col-md-4 col-sm-2 col1">r3c1</div>
@@ -69,9 +181,39 @@
 
 <div class="container-fluid scrollblock">
     <div class="row my-row1">
-        <div class="col-md-4 col-sm-2 col1">r1c1</div>
-        <div class="col-md-4 col-sm-2 col2">r1c2</div>
-        <div class="col-md-4 col-sm-2 col3">r1c3</div>
+        <div class="col-md-4 col-sm-2 col1">
+            <div class="card f-card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-2 col2">
+            <div class="card f-card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-2 col3">
+            <div class="card f-card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row my-row2">
         <div class="col-md-4 col-sm-2 col1">r2c1</div>
@@ -91,11 +233,16 @@
             <div class="col contact">
                 <button class="contactbutton" onclick="openForm()" id="contact-us">Email</button>
             </div>
-            <div class="col offset-8 copyright"><p>All rights reserved ©</p></div>
+            <div class="col  call-us"><a href="tel:0486438966">+32(0) 48 86 43 89 66</a>
+            </div>
+            <div class="col  copyright"><p>All rights reserved ©</p>
+            </div>
+
         </div>
     </div>
     <div class="form-popup" id="myForm">
-        <form action="https://formspree.io/f/mdopybww" method="POST" class="form-container container-fluid shadow-lg rounded-lg form-bg">
+        <form action="https://formspree.io/f/mdopybww" method="POST"
+              class="form-container container-fluid shadow-lg rounded-lg form-bg">
             <h2>What would you like to tell us?</h2>
 
             <div><label for="name"><b>Name</b></label></div>
@@ -110,31 +257,7 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
         </form>
     </div>
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
 
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-
-        var deadline = new Date("Jan 15, 2021 17:00:00").getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var t = deadline - now;
-            var days = Math.floor(t / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((t % (1000 * 60)) / 1000);
-            document.getElementById("countdown").innerHTML = days + "d "
-                + hours + "h " + minutes + "m " + seconds + "s ";
-            if (t < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "No longer Available";
-            }
-        }, 1000);
-    </script>
 </footer>
 </body>
 </html>
