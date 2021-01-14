@@ -1,4 +1,10 @@
-
+/*over-ruling styles*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #00001e;
+    height: 100%;
+}
+/*==================================================================================*/
 /*Css van Elia start hier */
 /*styling header*/
 
@@ -74,6 +80,7 @@
 }
 
 /*css van Elia stopt hier*/
+/*==================================================================================*/
 /* Css van jens vanaf hier*/
 
 .my-container{
@@ -121,60 +128,31 @@ figure {
 }
 
 /*css van isaac stopt hier */
+/*==================================================================================*/
 /*css van paul start hier */
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
 /*Navigation make-up */
 .navibarbg{
     background-color: whitesmoke;
     z-index: 1;
    /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
-
 }
-/* sticky class for navbar */
-.sticky-f {
-    position: sticky;
-    top: 0;
+.logo-size{
+    width: 50px;
+    height: 50px;
 }
-.my-container1-f{
-    border-width: 2px;
-    border-color: red;
-    border-style: solid;
-}
-.my-row1-f {
-    border-width: 1px;
-    border-color: blue;
-    border-style: dotted;
-}
-.my-row2-f {
-    border-width: 1px;
-    border-color: green;
-    border-style: dashed;
-
-}
-.my-row3-f {
-    border-width: 1px;
-    border-color: black;
-    border-style: double;
-
-}
-.col1-f{
-    border-width: 1px;
-    border-color: yellow;
-    border-style: dotted;
-}
-.col2-f{
-    border-width: 1px;
-    border-color: #0a072d;
-    border-style: dotted;
-}
-.col3-f{
-    border-width: 1px;
-    border-color: #087a55;
-    border-style: dotted;
-}
+/* card make-up */
 .f-card {
-    box-shadow: #0a072d;
-    width: 18rem;
+
 }
 .f-card:hover {
     z-index:1;
@@ -182,14 +160,13 @@ figure {
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 
 }
-
 /*parallaxes on fall page*/
 .f-parallax{
     /* The image used */
     background-image: url("../img/fall3.jpg");
 
     /* Set a specific height */
-    height: 1000px;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -197,7 +174,6 @@ figure {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .f-p-block-1{
     font-size: 2em;
     position: absolute;
@@ -205,17 +181,17 @@ figure {
     left: 8em;
 }
 .f-p-block-2{
-    font-size: 2rem;
+    font-size: 2em;
     position: absolute;
-    top: 11rem;
-    left: 10rem;
+    top: 10.5em;
+    left: 10em;
 }
 .f-parallax2{
     /* The image used */
     background-image: url("../img/fall2.jpg");
 
     /* Set a specific height */
-    height: 1000px;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -228,19 +204,12 @@ figure {
     background-color:whitesmoke;
     font-size: 18px;
 }
-/* footer make-up */
-footer {
-
-   /* background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
-
-}
 /* pop-up form make-up */
 .form-container {
     max-width: 300px;
     padding: 10px;
     background-color: whitesmoke;
-    font-family: Bahnschrift;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 .form-container>textarea:focus {
     background-color: lightgray;
@@ -249,13 +218,12 @@ footer {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
-    left: 3rem;
+    bottom: 5vh;
+    left: 5vw;
     z-index: 2;
 }
 .form-bg{
-    /*background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));*/
+    background-color: #a40000;
 }
 #message{
     max-height: 10em;
@@ -263,5 +231,5 @@ footer {
 }
 
 /*css van paul stopt hier */
+/*==================================================================================*/
 /* CSS van peter start hier */
-
