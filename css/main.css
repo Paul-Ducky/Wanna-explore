@@ -1,5 +1,5 @@
 /*styling header*/
-.s-container-header {
+.spr-container-header {
     height: 100vh;
 
 }
@@ -61,7 +61,7 @@ figure {
 
 
 
-.e-parallax-header {
+.spr-parallax-header {
    background-image: url("../img/spring-banner-head.jpg");
    background-attachment: fixed;
    background-position: center;
@@ -70,7 +70,7 @@ figure {
    height: 100vh;
 }
 
-.e-light-h1{
+.spr-light-h1{
    font-weight:200;
    font-size:3em;
 
@@ -78,7 +78,7 @@ figure {
 
 /* end styling header */
 
-.s-opacy-grey-bg{
+.spr-opacity-grey-bg{
 
    background-color:rgba(120,120,120,0.6);
 
@@ -90,30 +90,38 @@ figure {
 
 }
 
-.border-test{
-    border:solid black 1px;
+.spr-positioning-2{
+    position:relative;
+    overflow:visible;
 }
 
-.s-row-width-h1{
+.spr-positioning{
+    position:absolute;
+    z-index: 99;
+}
+
+
+.spr-row-width-h1{
    max-width:90%;
 }
 
-.s-font-size-1{
+.spr-font-size-1{
     font-size:3em;
 }
 
-.sp-font-style-h2{
+.spr-font-style-h2{
     font-family: helvetica,sans-serif;
+
 }
 
-.s-border-left{
+.spr-border-left{
     border-left:solid green 2px;
     padding-left:5px;
     margin-bottom: 10px;
 }
 
 /*card interface */
-.e-parallax-divider-sm {
+.spr-parallax-divider-sm {
    background-image: url("../img/spring-banner-transition.jpg");
    background-attachment: fixed;
    background-position: center;
@@ -122,7 +130,7 @@ figure {
    height: 70vh;
 }
 
-.container-background-color-cards {
+.spr-container-background-color-cards {
    background-color: #DDDDDD;
    background-attachment: fixed;
    background-position: center;
@@ -132,14 +140,14 @@ figure {
 }
 
 
-.sp-quote-font-style{
+.spr-quote-font-style{
 
     font-size:1.5em;
 
     background-color:white;
 }
 
-.sp-container-quote-font-style{
+.spr-container-quote-font-style{
     margin-top:100px;
     border-left:3px solid black;
 
@@ -148,14 +156,14 @@ figure {
 }
 
 
-.container-background-color-cards-2 {
-    background-color: rgba(200,200,200,0.3);
+.spr-container-background-color-cards-2 {
+    background-color:rgba(230,230,230,0.3);
     border-bottom:solid white 1px;
     height: 100%;
 
 }
 
-.s-background-color-cards{
+.spr-background-color-cards{
     background-color:rgba(255,255,255,0.4);
     border-radius:5px;
     border:3px solid rgba(255,255,255,0.5);
@@ -163,6 +171,7 @@ figure {
 }
 
 .spr-text-align{
+    margin-top:20px;
     text-align:center;
     font-size:2em;
 
@@ -177,7 +186,7 @@ figure {
     background-color:white;
 }
 
-.s-background-color-cards:hover{
+.spr-background-color-cards:hover{
 box-shadow:5px 5px 30px;
     border:3px solid rgba(180,180,180,0.8);
 }
@@ -194,27 +203,47 @@ box-shadow:5px 5px 30px;
 
 
 
+
+
+@media only screen and (max-width:768px)   {
+
+    .spr-hide-col-mid{
+        display:none;
+    }
+
+}
+
+
+
+
 /*full screen monitor */
 @media only screen and (min-width:768px) {
 
 
-    .e-light-h1 {
+    .spr-light-h1 {
         font-weight: 200;
         font-size: 4em;
     }
 
-    .s-row-width-h1 {
+    .spr-row-width-h1 {
         max-width: 100%;
     }
 
-    .s-nodisplay {
+    .spr-nodisplay-break {
         display: none;
     }
 
-    .sp-font-style-h2{
+    .spr-font-style-h2{
         padding-top:20px;
-        font-size:2.5em;
+        font-size:2em;
     }
 
 
+}
+
+
+.dropdown2{
+    background-color:red;
+    height:10vh;
+    position:absolute;
 }
