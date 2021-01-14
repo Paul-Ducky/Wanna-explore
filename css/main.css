@@ -233,3 +233,84 @@ figure {
 /*css van paul stopt hier */
 /*==================================================================================*/
 /* CSS van peter start hier */
+
+
+.container-index {
+}
+
+.row-index {
+}
+
+.col-index {
+    background-color: whitesmoke;
+}
+
+#parallaxi{
+    background-image: url("../img/greece-1546902_1920.jpg");
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+.carousel {overflow:hidden}
+*/
+.carousel-inner {
+    max-height: 650px;
+}
+
+/*
+.carousel-inner > .carousel-item > img {
+    height: 100vh;
+}
+/*
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+*/
+
+.car-row {
+    padding: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
