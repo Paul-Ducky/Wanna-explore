@@ -1,45 +1,150 @@
-body{
+body {
 }
 
-.my-container{
-    border: 2px solid red;
+.container-index {
 }
 
-.my-row{
-    border: 2px solid blue;
+.row-index {
 }
 
-.my-col{
-    border: 2px dotted green;
+.col-index {
     background-color: whitesmoke;
 }
 
-#navbarMenu{
+#navbarMenu {
     padding: 10px;
 }
 
-.navbar{
+.navbar {
     padding: 10px;
 }
 
-#my-carousel{
+.navibarbg {
+    z-index: 1;
+    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
+
+}
+
+.sticky-f {
+    position: sticky;
+    top: 0;
+}
+
+.car-wrap {
+}
+
+/*
+.carousel {overflow:hidden}
+*/
+.carousel-inner {
+    max-height: 650px;
+}
+
+/*
+.carousel-inner > .carousel-item > img {
+    height: 100vh;
+}
+/*
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+*/
+
+#my-carousel {
+}
+
+.car-row {
     padding: 50px;
 }
 
-.car-row{
-    padding: 50px;
+.car-col {
 }
 
-.car-col{
-    justify-content: center;
+@media only screen and (max-width: 1199px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
 }
 
+@media only screen and (max-width: 991px) {
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+footer {
+    background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: Bahnschrift;
+}
+
+.form-container > textarea:focus {
+    background-color: lightgray;
+    outline: none;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 3rem;
+    z-index: 2;
+}
+
+.form-bg {
+    /*background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));*/
+}
+
+#message {
+    max-height: 10em;
+    width: 250px;
+}
+
+/*
 .form-popup{
     display: none;
     position: fixed;
 }
 
-.footer{
+.footerindex{
     height: 250px;
 }
 
@@ -47,3 +152,4 @@ body{
     align-items: stretch;
     float: bottom;
 }
+ */
