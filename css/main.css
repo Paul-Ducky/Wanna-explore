@@ -114,7 +114,7 @@ figure {
 
 /*card interface */
 .e-parallax-divider-sm {
-   background-image: url("../img/spring-banner-transition-2.jpg");
+   background-image: url("../img/spring-banner-transition.jpg");
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
@@ -142,7 +142,7 @@ figure {
 .sp-container-quote-font-style{
     margin-top:100px;
     border-left:3px solid black;
-    
+
     padding-right:0;
     background-color:white;
 }
