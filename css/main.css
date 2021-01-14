@@ -1,4 +1,21 @@
 /*styling header*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    background-color:#333333;
+    color:whitesmoke;
+}
+
+.navibarbg{
+    position:fixed;
+    background-color:#333333;
+    width:100vw;
+    z-index:99;
+}
+
 .spr-container-header {
     height: 100vh;
 
@@ -58,67 +75,57 @@ figure {
 }
 
 
-
+/*styling-header Spring*/
 
 
 .spr-parallax-header {
-   background-image: url("../img/spring-banner-head.jpg");
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 100vh;
+    background-image: url("../img/spring-banner-head.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-.spr-light-h1{
-   font-weight:200;
-   font-size:3em;
 
-}
-
-/* end styling header */
 
 .spr-opacity-grey-bg{
-
-   background-color:rgba(120,120,120,0.6);
-
-
+    background-color:rgba(120,120,120,0.6);
 }
-
-.spr-text-color{
-    color:#333333;
-
-}
-
-.spr-positioning-2{
-    position:relative;
-    overflow:visible;
-}
-
-.spr-positioning{
-    position:absolute;
-    z-index: 99;
-}
-
 
 .spr-row-width-h1{
-   max-width:90%;
+    max-width:90%;
+}
+.spr-light-h1 {
+    font-weight:100;
+    font-size: 3em;
+}
+/* end styling header spring */
+
+
+
+
+.spr-text-color{
+    color:#00001e;
+
 }
 
-.spr-font-size-1{
-    font-size:3em;
-}
 
-.spr-font-style-h2{
-    font-family: helvetica,sans-serif;
 
-}
 
-.spr-border-left{
+
+
+
+
+.spr-intro-text-styling{
     border-left:solid green 2px;
     padding-left:5px;
     margin-bottom: 10px;
 }
+
+
+
+
 
 /*card interface */
 .spr-parallax-divider-sm {
@@ -127,8 +134,20 @@ figure {
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 70vh;
+   height: 5vh;
 }
+
+/*main card section spring */
+
+
+
+.spr-container-background-color-cards-head {
+    background-color:rgb(240,240,240);
+    border-bottom:solid white 1px;
+    height: 100%;
+
+}
+
 
 .spr-container-background-color-cards {
    background-color: #DDDDDD;
@@ -137,7 +156,25 @@ figure {
    background-size: cover;
    background-repeat: no-repeat;
    height: 100%;
+
 }
+
+.spr-background-color-cards{
+    background-color:rgba(255,255,255,0.4);
+    border-radius:5px;
+    border:3px solid rgba(255,255,255,0.5);
+    min-height:75vh;
+}
+
+.spr-card-image-styling{
+    width:100%;
+    opacity: 0.5;
+}
+
+/* end card section spring */
+
+
+
 
 
 .spr-quote-font-style{
@@ -148,7 +185,7 @@ figure {
 }
 
 .spr-container-quote-font-style{
-    margin-top:100px;
+
     border-left:3px solid black;
 
     padding-right:0;
@@ -156,18 +193,33 @@ figure {
 }
 
 
-.spr-container-background-color-cards-2 {
-    background-color:rgba(230,230,230,0.3);
-    border-bottom:solid white 1px;
-    height: 100%;
 
+
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: Bahnschrift;
 }
-
-.spr-background-color-cards{
-    background-color:rgba(255,255,255,0.4);
-    border-radius:5px;
-    border:3px solid rgba(255,255,255,0.5);
-
+.form-container>textarea:focus {
+    background-color: lightgray;
+    outline: none;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 3rem;
+    z-index: 2;
+}
+.form-bg{
+    /*background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
+    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));*/
+}
+#message{
+    max-height: 10em;
+    width: 250px;
 }
 
 .spr-text-align{
@@ -203,12 +255,16 @@ box-shadow:5px 5px 30px;
 
 
 
-
+/* small screen media  spring */
 
 @media only screen and (max-width:768px)   {
 
     .spr-hide-col-mid{
         display:none;
+    }
+    .spr-background-color-cards{
+
+        min-height:0;
     }
 
 }
@@ -237,13 +293,12 @@ box-shadow:5px 5px 30px;
         padding-top:20px;
         font-size:2em;
     }
+    .spr-background-color-cards{
+
+        min-height:80vh;
+    }
 
 
 }
 
 
-.dropdown2{
-    background-color:red;
-    height:10vh;
-    position:absolute;
-}
