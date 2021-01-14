@@ -85,12 +85,25 @@ figure {
 
 }
 
+.spr-text-color{
+    color:#333333;
+
+}
+
+.border-test{
+    border:solid black 1px;
+}
+
 .s-row-width-h1{
    max-width:90%;
 }
 
-.s-font-size-h1{
+.s-font-size-1{
     font-size:3em;
+}
+
+.sp-font-style-h2{
+    font-family: helvetica,sans-serif;
 }
 
 .s-border-left{
@@ -101,16 +114,16 @@ figure {
 
 /*card interface */
 .e-parallax-divider-sm {
-   background-image: url("../img/spring-banner-transition.jpg");
+   background-image: url("../img/spring-banner-transition-2.jpg");
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   height: 40vh;
+   height: 70vh;
 }
 
-.e-parallax-background-cards {
-   background-image: linear-gradient(white, blue);
+.container-background-color-cards {
+   background-color: #DDDDDD;
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
@@ -118,15 +131,60 @@ figure {
    height: 100%;
 }
 
-.s-background-color-cards{
-    background-image:linear-gradient(white, blue);
 
+.sp-quote-font-style{
+
+    font-size:1.5em;
+
+    background-color:white;
+}
+
+.sp-container-quote-font-style{
+    margin-top:100px;
+    border-left:3px solid black;
+    
+    padding-right:0;
+    background-color:white;
+}
+
+
+.container-background-color-cards-2 {
+    background-color: rgba(200,200,200,0.3);
+    border-bottom:solid white 1px;
+    height: 100%;
+
+}
+
+.s-background-color-cards{
+    background-color:rgba(255,255,255,0.4);
+    border-radius:5px;
+    border:3px solid rgba(255,255,255,0.5);
+
+}
+
+.spr-text-align{
+    text-align:center;
+    font-size:2em;
+
+}
+
+.spr-price-border{
+    border:solid black 1px;
+    text-align:center;
+    display:block;
+    border-radius:3px;
+    margin:4px;
+    background-color:white;
+}
+
+.s-background-color-cards:hover{
+box-shadow:5px 5px 30px;
+    border:3px solid rgba(180,180,180,0.8);
 }
 
 
 
-
-.card-picture{
+.spr-card-picture{
       width:50px;
       height:50px;
       background:transparent;
@@ -151,6 +209,11 @@ figure {
 
     .s-nodisplay {
         display: none;
+    }
+
+    .sp-font-style-h2{
+        padding-top:20px;
+        font-size:2.5em;
     }
 
 
