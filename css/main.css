@@ -1,10 +1,416 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
+/*over-ruling styles*/
+body{
     font-family: 'Montserrat', sans-serif;
     color: #00001e;
+
+}
+/*==================================================================================*/
+/*Css van Elia start hier */
+/*styling header*/
+.s-container-header {
+    height: 100vh;
+}
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+.spr-parallax-header {
+    background-image: url("../img/spring-banner-head.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.spr-opacity-grey-bg{
+    background-color:rgba(120,120,120,0.6);
+}
+
+.spr-row-width-h1{
+    max-width:90%;
+}
+.spr-light-h1 {
+    font-weight:100;
+    font-size: 3em;
+}
+/* end styling header spring */
+
+.spr-text-color{
+    color:#00001e;
+
+}
+
+.spr-intro-text-styling{
+    border-left:solid green 2px;
+    padding-left:5px;
+    margin-bottom: 10px;
+}
+
+/*card interface */
+.spr-parallax-divider-sm {
+   background-image: url("../img/spring-banner-transition.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 5vh;
+}
+
+/*main card section spring */
+
+.spr-container-background-color-cards-head {
+    background-color:rgb(240,240,240);
+    border-bottom:solid white 1px;
+    height: 100%;
+
+}
+
+.spr-container-background-color-cards {
+   background-color: #DDDDDD;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100%;
+
+}
+.spr-background-color-cards{
+    background-color:rgba(255,255,255,0.4);
+    border-radius:5px;
+    border:3px solid rgba(255,255,255,0.5);
+    min-height:75vh;
+}
+.spr-card-image-styling{
+    width:100%;
+    opacity: 0.5;
+}
+
+/* end card section spring */
+
+.spr-quote-font-style{
+
+    font-size:1.5em;
+
+    background-color:white;
+}
+.spr-container-quote-font-style{
+
+    border-left:3px solid black;
+
+    padding-right:0;
+    background-color:white;
+}
+
+.spr-text-align{
+    margin-top:20px;
+    text-align:center;
+    font-size:2em;
+
+}
+
+.spr-price-border{
+    border:solid black 1px;
+    text-align:center;
+    display:block;
+    border-radius:3px;
+    margin:4px;
+    background-color:white;
+}
+
+.spr-background-color-cards:hover{
+box-shadow:5px 5px 30px;
+    border:3px solid rgba(180,180,180,0.8);
+}
+
+.spr-card-picture{
+      width:50px;
+      height:50px;
+      background:transparent;
+
+}
+/*end card interface */
+
+/* small screen media  spring */
+
+@media only screen and (max-width:768px)   {
+
+    .spr-hide-col-mid{
+        display:none;
+    }
+    .spr-background-color-cards{
+
+        min-height:0;
+    }
+
+}
+
+/*full screen monitor */
+@media only screen and (min-width:768px) {
+
+
+    .spr-light-h1 {
+        font-weight: 200;
+        font-size: 4em;
+    }
+
+    .spr-row-width-h1 {
+        max-width: 100%;
+    }
+
+    .spr-nodisplay-break {
+        display: none;
+    }
+    .s-nodisplay {
+        display: none;
+    }
+
+}
+
+/*css van Elia stopt hier*/
+/*==================================================================================*/
+/* Css van jens vanaf hier*/
+
+.my-container{
+    border: 2px solid red;
+}
+.my-row{
+    border: 2px solid blue;
+}
+.my-col{
+    border: 2px dotted green;
+    background-color: whitesmoke;
+}
+
+#navbarMenu{
+    padding: 10px;
+}
+
+.navbar{
+    padding: 10px;
+}
+
+#my-carousel{
+    padding: 50px;
+}
+
+.car-row{
+    padding: 50px;
+}
+
+.car-col{
+    justify-content: center;
+}
+
+
+.container-index {
+}
+
+.row-index {
+}
+
+.col-index {
+    background-color: whitesmoke;
+}
+
+#parallaxi{
+    background-image: url("../img/griekenland.jpg");
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+.carousel {overflow:hidden}
+*/
+.carousel-inner {
+    max-height: 650px;
+}
+
+/*
+.carousel-inner > .carousel-item > img {
+    height: 100vh;
+}
+/*
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+*/
+
+.spr-font-style-h2{
+    padding-top:20px;
+    font-size:2em;
+}
+.spr-background-color-cards{
+
+    min-height:80vh;
+}
+.car-row {
+    padding: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+/* Css van jens stopt hier */
+/* Css van isaac start hier */
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+
+/*css van isaac stopt hier */
+/*==================================================================================*/
+/*css van paul start hier */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+/*Navigation make-up */
+.navibarbg{
+    background-color: whitesmoke;
+    z-index: 1;
+   /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
+}
+.logo-size{
+    width: 50px;
+    height: 50px;
+}
+/* card make-up */
+
+.f-card:hover {
+    z-index:1;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+}
+/*parallaxes on fall page*/
+.f-parallax{
+    /* The image used */
+    background-image: url("../img/fall3.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f-p-block-1{
+    font-size: 2em;
+    position: absolute;
+    top: 9em;
+    left: 8em;
+}
+.f-p-block-2{
+    font-size: 2em;
+    position: absolute;
+    top: 10.5em;
+    left: 10em;
+}
+.f-parallax2{
+    /* The image used */
+    background-image: url("../img/fall2.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* box in between parallaxes */
+.scrollblock {
+    background-color:whitesmoke;
+    font-size: 18px;
+}
+/* pop-up form make-up */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.form-container>textarea:focus {
+    background-color: lightgray;
+    outline: none;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 5vh;
+    left: 5vw;
+    z-index: 2;
+}
+.form-bg{
+    background-color: #a40000;
+}
+#message{
+    max-height: 10em;
+    width: 250px;
+}
+
+/*css van paul stopt hier */
+/*==================================================================================*/
+/* CSS van peter start hier */
+
+* {
+    box-sizing: border-box;
 }
 
 .winter-container {
@@ -38,3 +444,4 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
