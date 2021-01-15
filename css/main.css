@@ -27,6 +27,13 @@ a{
 .nav-link-color{
     color: whitesmoke !important;
 }
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 5vh;
+    left: 25vw;
+    z-index: 2;
+}
 /*==================================================================================*/
 /*Css van Elia start hier */
 /*styling header*/
