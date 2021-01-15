@@ -217,7 +217,7 @@ box-shadow:5px 5px 30px;
 }
 
 #parallaxi{
-    background-image: url("img/griekenland.jpg");
+    background-image: url("/img/griekenland.jpg");
     height: 780px;
     background-attachment: fixed;
     background-position: center;
@@ -226,7 +226,7 @@ box-shadow:5px 5px 30px;
 }
 
 #parallaxi2{
-    background-image: url("img/griekenland.jpg");
+    background-image: url("/img/griekenland.jpg");
     opacity: 0.7;
     height: 780px;
     background-attachment: fixed;
