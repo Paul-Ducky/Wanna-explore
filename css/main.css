@@ -203,23 +203,8 @@ box-shadow:5px 5px 30px;
 /*==================================================================================*/
 /* Css van jens vanaf hier*/
 
-.my-container{
-    border: 2px solid red;
-}
-.my-row{
-    border: 2px solid blue;
-}
-.my-col{
-    border: 2px dotted green;
-    background-color: whitesmoke;
-}
-
-#navbarMenu{
-    padding: 10px;
-}
-
-.navbar{
-    padding: 10px;
+#container-index{
+    background-color:rgba(255,255,255,0.4);
 }
 
 #my-carousel{
@@ -227,26 +212,12 @@ box-shadow:5px 5px 30px;
 }
 
 .car-row{
-    padding: 50px;
-}
-
-.car-col{
-    justify-content: center;
-}
-
-
-.container-index {
-}
-
-.row-index {
-}
-
-.col-index {
-    background-color: whitesmoke;
+    padding: 20px;
+    background-color:rgba(255,255,255,0.4);
 }
 
 #parallaxi{
-    background-image: url("../img/griekenland.jpg");
+    background-image: url("../img/greece-1546902_1920.jpg");
     height: 780px;
     background-attachment: fixed;
     background-position: center;
@@ -254,31 +225,28 @@ box-shadow:5px 5px 30px;
     background-size: cover;
 }
 
-/*
-.carousel {overflow:hidden}
-*/
-.carousel-inner {
+#parallaxi2{
+    background-image: url("../img/greece-1546902_1920.jpg");
+    opacity: 0.7;
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.car-wrap {
+    border: 3px black;
+}
+
+#destin{
+    color: whitesmoke;
+}
+
+.innerindex {
     max-height: 650px;
 }
 
-/*
-.carousel-inner > .carousel-item > img {
-    height: 100vh;
-}
-/*
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-}
-*/
-
-.spr-font-style-h2{
-    padding-top:20px;
-    font-size:2em;
-}
-.spr-background-color-cards{
-
-    min-height:80vh;
-}
 .car-row {
     padding: 50px;
 }
@@ -292,8 +260,6 @@ box-shadow:5px 5px 30px;
         font-size: 20px;
     }
 }
-
-
 
 @media only screen and (max-width: 991px) {
     .carousel-caption h3 {
@@ -323,6 +289,44 @@ box-shadow:5px 5px 30px;
     .carousel-caption p {
         font-size: 14px;
     }
+}
+
+.aboutus{
+    background-color: whitesmoke;
+    opacity: 0.6;
+    margin-left: 60vh;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    box-shadow: 0 3px gray;
+}
+
+.row-about{
+    padding-top: 70px;
+}
+
+div.aboutus>h1{
+    text-align: center;
+    font-style: italic;
+    color: darkblue;
+    padding: 5px;
+}
+
+div.aboutus>p{
+    text-align: center;
+    color: darkblue;
+    padding: 5px;
+}
+
+.slogan{
+    color: whitesmoke;
+    margin-left: 80vh;
+    margin-right: 30vh;
+    padding-top: 10vh;
+}
+
+.footindex{
+    padding: 30px;
 }
 
 /* Css van jens stopt hier */
