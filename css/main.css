@@ -7,10 +7,50 @@ body{
 /*==================================================================================*/
 /*Css van Elia start hier */
 /*styling header*/
-.s-container-header {
+
+.spr-navibarbg{
+    background-color:#747474;
+    position:fixed;
+    width:100vw;
+    z-index:3;
+}
+
+
+
+.spr-footer-bg-color{
+    background-color:#747474;
+    color:whitesmoke;
+}
+
+
+.spr-container-header {
+    height: 100vh;
+
+}
+
+.spr-parallax-header {
+    background-image: url("../img/spring-banner-head.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
+
+
+.spr-opacity-grey-bg{
+    background-color:rgba(120,120,120,0.6);
+}
+
+.spr-row-width-h1{
+    max-width:90%;
+}
+.spr-light-h1 {
+    font-weight:100;
+    font-size: 3em;
+}
+/* end styling header spring */
 
 
 
@@ -20,6 +60,7 @@ figure {
     height: 60%;
     margin: 0!important;
 }
+
 .my-container1{
     border-width: 2px;
     border-color: red;
@@ -54,29 +95,7 @@ figure {
     border-style: dotted;
 }
 
-.spr-parallax-header {
-    background-image: url("../img/spring-banner-head.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
 
-
-
-.spr-opacity-grey-bg{
-    background-color:rgba(120,120,120,0.6);
-}
-
-.spr-row-width-h1{
-    max-width:90%;
-}
-.spr-light-h1 {
-    font-weight:100;
-    font-size: 3em;
-}
-/* end styling header spring */
 
 
 
@@ -118,7 +137,7 @@ figure {
 
 
 .spr-container-background-color-cards-head {
-    background-color:rgb(240,240,240);
+    background-color:#F0F0F0;
     border-bottom:solid white 1px;
     height: 100%;
 
@@ -144,8 +163,11 @@ figure {
 
 .spr-card-image-styling{
     width:100%;
-    opacity: 0.5;
+    height:25vh;
+    opacity: 0.6;
+    border-radius: 2px;
 }
+
 
 /* end card section spring */
 
@@ -205,13 +227,10 @@ figure {
 
 }
 
-.spr-price-border{
-    border:solid black 1px;
-    text-align:center;
-    display:block;
-    border-radius:3px;
-    margin:4px;
-    background-color:white;
+.spr-align-button{
+  margin-left:30%;
+
+
 }
 
 .spr-background-color-cards:hover{
@@ -220,6 +239,9 @@ box-shadow:5px 5px 30px;
 }
 
 
+.spr-button-container{
+    border:solid black 1px;
+}
 
 .spr-card-picture{
       width:50px;
@@ -233,42 +255,7 @@ box-shadow:5px 5px 30px;
 
 /* small screen media  spring */
 
-@media only screen and (max-width:768px)   {
 
-    .spr-hide-col-mid{
-        display:none;
-    }
-    .spr-background-color-cards{
-
-        min-height:0;
-    }
-
-}
-
-
-
-
-/*full screen monitor */
-@media only screen and (min-width:768px) {
-
-
-    .spr-light-h1 {
-        font-weight: 200;
-        font-size: 4em;
-    }
-
-    .spr-row-width-h1 {
-        max-width: 100%;
-    }
-
-    .spr-nodisplay-break {
-        display: none;
-    }
-    .s-nodisplay {
-        display: none;
-    }
-
-}
 
 /*css van Elia stopt hier*/
 /*==================================================================================*/
@@ -466,13 +453,14 @@ figure {
         padding-top:20px;
         font-size:2em;
     }
-    .spr-background-color-cards{
 
-        min-height:80vh;
-    }
 .car-row {
     padding: 50px;
 }
+.spr-display-break{
+    display:none;
+}
+
 
 @media only screen and (max-width: 1199px) {
     .carousel-caption h3 {
@@ -496,6 +484,7 @@ figure {
     }
 }
 
+
 @media only screen and (max-width: 767px) {
     .carousel-caption h3 {
         font-size: 16px;
@@ -514,4 +503,65 @@ figure {
     .carousel-caption p {
         font-size: 14px;
     }
+}
+@media only screen and (min-width: 600px){
+    .spr-display-break{
+        display:inline-block;
+    }
+
+}
+
+
+@media only screen and (max-width:768px)   {
+
+    .spr-hide-col-mid{
+        display:none;
+    }
+    .spr-background-color-cards{
+
+        min-height:0;
+    }
+
+}
+
+
+
+
+/*full screen monitor */
+@media only screen and (min-width:768px) {
+
+
+    .spr-light-h1 {
+        font-weight: 200;
+        font-size: 4em;
+    }
+
+    .spr-row-width-h1 {
+        max-width: 100%;
+    }
+
+    .spr-nodisplay-break {
+        display: none;
+    }
+
+    .spr-display-break{
+        display:inline;
+    }
+    .spring-nodisplay {
+        display: none;
+    }
+    .spr-height-card-row-1{
+
+        min-height:110vh;
+    }
+
+
+    .spr-align-button{
+        vertical-align:bottom;
+        margin-left:30%;
+
+
+    }
+
+
 }
