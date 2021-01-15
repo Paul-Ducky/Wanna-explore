@@ -1,4 +1,8 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #00001e;
 
+}
 /*Css van Elia start hier */
 /*styling header*/
 
@@ -76,23 +80,8 @@
 /*css van Elia stopt hier*/
 /* Css van jens vanaf hier*/
 
-.my-container{
-    border: 2px solid red;
-}
-.my-row{
-    border: 2px solid blue;
-}
-.my-col{
-    border: 2px dotted green;
-    background-color: whitesmoke;
-}
-
-#navbarMenu{
-    padding: 10px;
-}
-
-.navbar{
-    padding: 10px;
+#container-index{
+    background-color:rgba(255,255,255,0.4);
 }
 
 #my-carousel{
@@ -100,17 +89,129 @@
 }
 
 .car-row{
+    padding: 20px;
+    background-color:rgba(255,255,255,0.4);
+}
+
+#parallaxi{
+    background-image: url("../img/greece-1546902_1920.jpg");
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallaxi2{
+    background-image: url("../img/greece-1546902_1920.jpg");
+    opacity: 0.7;
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.car-wrap {
+    border: 3px black;
+}
+
+#destin{
+    color: whitesmoke;
+}
+
+.innerindex {
+    max-height: 650px;
+}
+
+.car-row {
     padding: 50px;
 }
 
-.car-col{
-    justify-content: center;
+@media only screen and (max-width: 1199px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
 }
 
-.form-popup{
-    display: none;
-    position: fixed;
+@media only screen and (max-width: 991px) {
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
 }
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+.aboutus{
+    background-color: whitesmoke;
+    opacity: 0.6;
+    margin-left: 60vh;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    box-shadow: 0 3px gray;
+}
+
+.row-about{
+    padding-top: 70px;
+}
+
+div.aboutus>h1{
+    text-align: center;
+    font-style: italic;
+    color: darkblue;
+    padding: 5px;
+}
+
+div.aboutus>p{
+    text-align: center;
+    color: darkblue;
+    padding: 5px;
+}
+
+.slogan{
+    color: whitesmoke;
+    margin-left: 80vh;
+    margin-right: 30vh;
+    padding-top: 10vh;
+}
+
+.footindex{
+    padding: 30px;
+}
+
+/*
+.copyright{
+    align-items: stretch;
+    float: bottom;
+}
+ */
 /* Css van jens stopt hier */
 /* Css van isaac start hier */
 figure {
@@ -128,11 +229,6 @@ figure {
     z-index: 1;
    /* background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
 
-}
-/* sticky class for navbar */
-.sticky-f {
-    position: sticky;
-    top: 0;
 }
 .my-container1-f{
     border-width: 2px;
@@ -205,10 +301,8 @@ figure {
 }
 /* footer make-up */
 footer {
-
    /* background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
     background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255)); */
-
 }
 /* pop-up form make-up */
 .form-container {
@@ -224,7 +318,7 @@ footer {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
+    bottom: 40px;
     left: 3rem;
     z-index: 2;
 }
@@ -240,173 +334,3 @@ footer {
 /*css van paul stopt hier */
 /* CSS van peter start hier */
 
-
-}
-
-body {
-}
-
-.container-index {
-}
-
-.row-index {
-}
-
-.col-index {
-    background-color: whitesmoke;
-}
-
-#navbarMenu {
-    padding: 10px;
-}
-
-.navbar {
-    padding: 10px;
-}
-
-.navibarbg {
-    z-index: 1;
-    background: linear-gradient(0deg, rgb(238, 238, 238), rgb(199, 254, 255));
-
-}
-
-.sticky-f {
-    position: sticky;
-    top: 0;
-}
-
-#parallaxi{
-    background-image: url("../img/greece-1546902_1920.jpg");
-    height: 780px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.noscroll{
-
-}
-
-.car-wrap {
-}
-
-/*
-.carousel {overflow:hidden}
-*/
-.carousel-inner {
-    max-height: 650px;
-}
-
-/*
-.carousel-inner > .carousel-item > img {
-    height: 100vh;
-}
-/*
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-}
-*/
-
-#my-carousel {
-}
-
-.car-row {
-    padding: 50px;
-}
-
-.car-col {
-}
-
-@media only screen and (max-width: 1199px) {
-    .carousel-caption h3 {
-        font-size: 24px;
-    }
-
-    .carousel-caption p {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .carousel-caption h3 {
-        font-size: 18px;
-    }
-
-    .carousel-caption p {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .carousel-caption h3 {
-        font-size: 16px;
-    }
-
-    .carousel-caption p {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .carousel-caption h3 {
-        font-size: 16px;
-    }
-
-    .carousel-caption p {
-        font-size: 14px;
-    }
-}
-
-footer {
-    background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-    bottom: 0px;
-
-}
-
-.form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: whitesmoke;
-    font-family: Bahnschrift;
-}
-
-.form-container > textarea:focus {
-    background-color: lightgray;
-    outline: none;
-}
-
-.form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 3rem;
-    z-index: 2;
-}
-
-.form-bg {
-    /*background: -webkit-linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));
-    background: linear-gradient(180deg, rgb(238, 238, 238), rgb(199, 254, 255));*/
-}
-
-#message {
-    max-height: 10em;
-    width: 250px;
-}
-
-/*
-.form-popup{
-    display: none;
-    position: fixed;
-}
-
-.footerindex{
-    height: 250px;
-}
-
-.copyright{
-    align-items: stretch;
-    float: bottom;
-}
- */
