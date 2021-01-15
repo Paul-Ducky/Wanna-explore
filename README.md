@@ -17,7 +17,7 @@
 
 ###The use of GitHub simulates a professional way of how these projects should be approached and handled. It makes it possible for us BeCoders to share and align ###our work without any problems. It lets us work separately from remote locations and gives an efficient way of contributing our work in to the final product.
 
-http://localhost:63342/Wanna-explore/index.html
+https://paul-ducky.github.io/Wanna-explore/index.html
 
 
 file:///home/jens/Pictures/Screenshot%20from%202021-01-15%2014-33-20.png
