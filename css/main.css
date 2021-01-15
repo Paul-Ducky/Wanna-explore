@@ -1,16 +1,57 @@
+/*over-ruling styles*/
 body{
     font-family: 'Montserrat', sans-serif;
     color: #00001e;
-
 }
+footer{
+    color: whitesmoke;
+    background-color: #565656;
+}
+.contactbutton {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.telefoon {
+    margin-top: 10px;
+}
+.padding-footer{
+    padding-top: 20px;
+}
+a{
+    color: whitesmoke;
+}
+.navibarbg{
+    background-color: #565656;
+    z-index: 1;
+}
+.nav-link-color{
+    color: whitesmoke !important;
+}
+/*==================================================================================*/
 /*Css van Elia start hier */
 /*styling header*/
 
-.s-container-header {
-    height: 100vh;
+.spr-navibarbg{
+    background-color:#747474;
+    position:fixed;
+    width:100vw;
+    z-index:3;
 }
 
-.e-parallax-header {
+
+
+.spr-footer-bg-color{
+    background-color:#747474;
+    color:whitesmoke;
+}
+
+
+.spr-container-header {
+    height: 100vh;
+
+}
+
+.spr-parallax-header {
     background-image: url("../img/spring-banner-head.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -18,54 +59,189 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
-.e-light-h1 {
-    font-weight: 200;
+
+
+
+.spr-opacity-grey-bg{
+    background-color:rgba(120,120,120,0.6);
+}
+
+.spr-row-width-h1{
+    max-width:90%;
+}
+.spr-light-h1 {
+    font-weight:100;
     font-size: 3em;
+}
+/* end styling header spring */
+
+
+
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+.my-container1{
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+.my-row1 {
+    border-width: 1px;
+    border-color: blue;
+    border-style: dotted;
+    height: 300px;
+}
+.my-row2 {
+    border-width: 1px;
+    border-color: green;
+    border-style: dashed;
+    height:300px;
+}
+.my-row3 {
+    border-width: 1px;
+    border-color: black;
+    border-style: double;
+    height: 300px;
+}
+.col1{
+    border-width: 1px;
+    border-color: yellow;
+    border-style: dotted;
+}
+.col2{
+    border-width: 1px;
+    border-color: #0a072d;
+    border-style: dotted;
+}
+
+.spr-parallax-header {
+    background-image: url("../img/spring-banner-head.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+.spr-opacity-grey-bg{
+    background-color:rgba(120,120,120,0.6);
+}
+
+.spr-row-width-h1{
+    max-width:90%;
+}
+.spr-light-h1 {
+    font-weight:100;
+    font-size: 3em;
+}
+/* end styling header spring */
+
+.spr-text-color{
+    color:#00001e;
 
 }
 
-/* end styling header */
-
-.s-opacy-grey-bg {
-
-    background-color: rgba(120, 120, 120, 0.6);
-
+.spr-intro-text-styling{
+    border-left:solid green 2px;
+    padding-left:5px;
+    margin-bottom: 10px;
 }
-.s-row-width-h1 {
-    max-width: 90%;
-}
+
 /*card interface */
-.e-parallax-divider-sm {
-    background-image: url("../img/spring-banner-cards.jpeg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 2.5vh;
+.spr-parallax-divider-sm {
+   background-image: url("../img/spring-banner-transition.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 5vh;
 }
-.e-parallax-background-cards {
-    background-image: url("../img/spring-banner-cards.jpeg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+/*main card section spring */
+
+.spr-container-background-color-cards-head {
+    background-color:#F0F0F0;
+    border-bottom:solid white 1px;
     height: 100%;
+
 }
-.card-picture {
-    width: 50px;
-    height: 50px;
-    background: transparent;
+
+.spr-container-background-color-cards {
+   background-color: #DDDDDD;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100%;
+
+}
+.spr-background-color-cards{
+    background-color:rgba(255,255,255,0.4);
+    border-radius:5px;
+    border:3px solid rgba(255,255,255,0.5);
+    min-height:75vh;
+}
+.spr-card-image-styling{
+    width:100%;
+    height:25vh;
+    opacity: 0.6;
+    border-radius: 2px;
+}
+
+
+/* end card section spring */
+
+.spr-quote-font-style{
+
+    font-size:1.5em;
+
+    background-color:white;
+}
+.spr-container-quote-font-style{
+
+    border-left:3px solid black;
+
+    padding-right:0;
+    background-color:white;
+}
+
+.spr-text-align{
+    margin-top:20px;
+    text-align:center;
+    font-size:2em;
+
+}
+
+.spr-align-button{
+  margin-left:30%;
+
+
+}
+
+.spr-background-color-cards:hover{
+box-shadow:5px 5px 30px;
+    border:3px solid rgba(180,180,180,0.8);
+}
+
+
+.spr-button-container{
+    border:solid black 1px;
+}
+
+.spr-card-picture{
+      width:50px;
+      height:50px;
+      background:transparent;
 
 }
 /*end card interface */
 
-/*full screen monitor */
-@media only screen and (min-width: 768px) {
-
-    .e-light-h1 {
-        font-weight: 200;
-        font-size: 4em;
-    }
+/* small screen media  spring */
 
     .s-row-width-h1 {
         max-width: 100%;
@@ -78,6 +254,7 @@ body{
 }
 
 /*css van Elia stopt hier*/
+/*==================================================================================*/
 /* Css van jens vanaf hier*/
 
 #container-index{
