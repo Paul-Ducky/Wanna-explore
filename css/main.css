@@ -227,6 +227,97 @@ box-shadow:5px 5px 30px;
     justify-content: center;
 }
 
+
+.container-index {
+}
+
+.row-index {
+}
+
+.col-index {
+    background-color: whitesmoke;
+}
+
+#parallaxi{
+    background-image: url("../img/griekenland.jpg");
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+.carousel {overflow:hidden}
+*/
+.carousel-inner {
+    max-height: 650px;
+}
+
+/*
+.carousel-inner > .carousel-item > img {
+    height: 100vh;
+}
+/*
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+*/
+
+.spr-font-style-h2{
+    padding-top:20px;
+    font-size:2em;
+}
+.spr-background-color-cards{
+
+    min-height:80vh;
+}
+.car-row {
+    padding: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
 /* Css van jens stopt hier */
 /* Css van isaac start hier */
 figure {
@@ -363,92 +454,39 @@ figure {
 /*==================================================================================*/
 /* CSS van peter start hier */
 
-.container-index {
+* {
+    box-sizing: border-box;
 }
 
-.row-index {
+.winter-container {
+    border: none;
+    background-color: #DDDDDD;
 }
 
-.col-index {
-    background-color: whitesmoke;
+.winter-row {
+    border: none;
 }
 
-#parallaxi{
-    background-image: url("../img/griekenland.jpg");
-    height: 780px;
+.winter-col {
+    border: none;
+    min-height: 400px;
+}
+
+.parallax_winter_html_body {
+    height: 100%;
+}
+
+.parallax_winter {
+    /* The image used */
+    background-image: url("../img/soelden.jpeg");
+
+    /* Full height */
+    height: 50%;
+
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*
-.carousel {overflow:hidden}
-*/
-.carousel-inner {
-    max-height: 650px;
-}
-
-/*
-.carousel-inner > .carousel-item > img {
-    height: 100vh;
-}
-/*
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-}
-*/
-
-    .spr-font-style-h2{
-        padding-top:20px;
-        font-size:2em;
-    }
-    .spr-background-color-cards{
-
-        min-height:80vh;
-    }
-.car-row {
-    padding: 50px;
-}
-
-@media only screen and (max-width: 1199px) {
-    .carousel-caption h3 {
-        font-size: 24px;
-    }
-
-    .carousel-caption p {
-        font-size: 20px;
-    }
-}
-
-
-
-@media only screen and (max-width: 991px) {
-    .carousel-caption h3 {
-        font-size: 18px;
-    }
-
-    .carousel-caption p {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .carousel-caption h3 {
-        font-size: 16px;
-    }
-
-    .carousel-caption p {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .carousel-caption h3 {
-        font-size: 16px;
-    }
-
-    .carousel-caption p {
-        font-size: 14px;
-    }
-}
