@@ -5,6 +5,14 @@ function openForm() {
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
+function openForm1() {
+    document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+    document.getElementById("myForm1").style.display = "none";
+}
+
 
 function openForm2() {
     document.getElementById("myForm2").style.display = "block";
@@ -14,7 +22,7 @@ function closeForm2() {
     document.getElementById("myForm2").style.display = "none";
 }
 
-let deadline3 = new Date("Jan 21, 2021 17:00:00").getTime();
+let deadline3 = new Date("Jan 18, 2021 10:00:00").getTime();
 let z = setInterval(function () {
     var now = new Date().getTime();
     var t = deadline3 - now;
