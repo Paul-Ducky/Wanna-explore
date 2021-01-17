@@ -136,11 +136,7 @@ a{
 .spr-background-color-cards:hover .spr-card-image-styling{
     opacity: 1;
 }
-.spr-card-picture{
-      width:50px;
-      height:50px;
-      background:transparent;
-}
+
 /*end card interface */
 /* small screen media  spring */
 .spr-align-button{
